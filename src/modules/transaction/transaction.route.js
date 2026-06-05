@@ -5,7 +5,7 @@ const authMiddleware = require('../../middleware/auth');
 
 const router = express.Router();
 
-// Semua route transaksi wajib login
+// Semua route wajib login
 router.get('/services', authMiddleware, getServices);
 
 router.post('/transaction', authMiddleware, [
