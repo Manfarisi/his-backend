@@ -29,9 +29,9 @@ app.get('/', (req, res) => {
   res.json({ message: "Assignment Backend Developer" });
 });
 
-app.use('/api/auth', authRoutes);
-app.use('/api/balance', balanceRoutes);
-app.use('/api/transaction', transactionRoutes);
+app.use(authRoutes);
+app.use(balanceRoutes);
+app.use(transactionRoutes);
 
 
 // Jalankan Server
